@@ -1,4 +1,4 @@
-package me.ionar.salhack;
+package com.ngames.nclient;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -12,10 +12,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
-@Mod(modid = "salhack", name = "SalHack", version = SalHackMod.VERSION)
-public final class SalHackMod
+@Mod(modid = "nclient", name = "NClient", version = NClientMod.VERSION)
+public final class NClientMod
 {
-    public static final String NAME = "SalHack";
+    public static final String NAME = "NClient";
     public static final String VERSION = "2.05";
 
     public static final Logger log = LogManager.getLogger("sal");
@@ -25,7 +25,7 @@ public final class SalHackMod
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
-        log.info("init salhack v: " + VERSION);
+        log.info("init NClient v: " + VERSION);
 
         SalHack.Init();
 
